@@ -13,7 +13,6 @@ $(function() {
 	if (href.indexOf('/cp/publish/create/') !== -1) channel_id = href.substr(href.lastIndexOf('/') + 1);
 
 	$('body').on('blur', 'input[name=title], input[name=url_title]', function (e) {
-		e.stopPropagation();
 		var url_title = $('input[name=url_title]').val();
 		var post_data = 'ACT=' + willow_smart_url_title_act + '&url_title=' + url_title + '&channel_id=' + channel_id + '&entry_id=' + entry_id;
 		$.ajax({
