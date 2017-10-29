@@ -1,4 +1,4 @@
-# Willow's Smart URL Titles for ExpressionEngine 3
+# Willow's Smart URL Titles for ExpressionEngine 3 & 4
 
 This addon will check for an existing URL Title in the same channel and automatically append it to avoid errors when saving the entry. 
 
