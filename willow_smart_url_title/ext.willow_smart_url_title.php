@@ -3,7 +3,7 @@
 class Willow_smart_url_title_ext {
 
     var $settings        = array();
-    public $version         = '1.0.1';
+    public $version         = '1.1';
 
     function __construct($settings='')
     {
@@ -15,7 +15,7 @@ class Willow_smart_url_title_ext {
     {
         // Setup custom settings in this array.
         $this->settings = array();
-        
+
         $data = array(
             'class'     => __CLASS__,
             'method'    => 'add_smart_url_script',
@@ -25,8 +25,8 @@ class Willow_smart_url_title_ext {
             'enabled'   => 'y'
         );
         ee()->db->insert('extensions', $data);
-        
-    }       
+
+    }
 
     function add_smart_url_script()
     {
@@ -38,7 +38,7 @@ class Willow_smart_url_title_ext {
         if ($query->num_rows() > 0)
         {
             $row = $query->row();
-            $js .= str_replace('act = 0;', 'act = ' . $row->action_id, file_get_contents(PATH_THIRD . 'willow_smart_url_title/javascript/willow.js'));             
+            $js .= str_replace('act = 0', 'act = ' . $row->action_id, file_get_contents(PATH_THIRD . 'willow_smart_url_title/javascript/willow.js'));
         }
         return $js;
     }
@@ -55,7 +55,7 @@ class Willow_smart_url_title_ext {
         {
             return FALSE;
         }
-    }   
+    }
 
     // END
 }
