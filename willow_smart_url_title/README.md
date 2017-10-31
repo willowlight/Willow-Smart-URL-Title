@@ -18,6 +18,7 @@ For support and more information visit [Willow Light Studio](https://willowlight
 
 ##Changelog
 
+- 1.1.0 Rewrote mechanism for checking for existing URL Titles and added support for EE4.
 - 1.0.1 Improved JavaScript and replaced DB calls with Models.
 - 1.0.0 Initial release
 
