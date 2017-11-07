@@ -78,7 +78,7 @@ class Willow_smart_url_title {
 
 		if ($entry)
 		{
-			$this->check_entry($entry, $url_title);
+			$this->check_entry($entry, $url_title, $channel->channel_id);
 		}
 
 		// Existing entry so no check is performed
