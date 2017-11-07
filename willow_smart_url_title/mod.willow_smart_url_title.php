@@ -44,7 +44,7 @@ class Willow_smart_url_title {
 
 		if ($entry)
 		{
-			$this->check_entry($entry, $url_title);
+			$this->check_entry($entry, $url_title, $channel_id);
 		}
 
 		// Not found so no check is performed
@@ -91,7 +91,7 @@ class Willow_smart_url_title {
 
 	}
 
-	function check_entry($entry, $url_title)
+	function check_entry($entry, $url_title, $channel_id)
 	{
 		$fields = [];
 		$fields['found'] = true;
