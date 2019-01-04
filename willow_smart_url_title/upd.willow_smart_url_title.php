@@ -2,7 +2,7 @@
 
 class Willow_smart_url_title_upd {
 
-	public $version = '1.1.1';
+	public $version = '1.1.2';
 
 	public function __construct()
 	{
