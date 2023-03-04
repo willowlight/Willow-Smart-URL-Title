@@ -28,6 +28,10 @@ $(function() {
 		    		if (json.not_changed == false)
 		    		{
 		   				$('input[name=url_title]').val(json.url_title);
+						//If using Structure, revalidate field
+						if ( $('input[name=structure__uri]').length ) {
+							$('input[name=structure__uri]').val(json.url_title);
+						}
 		   				// Force EE to revalidate field
 						$('input[name=url_title]').trigger('blur');
 		    			$('input[name=url_title]').parents('fieldset.col-group').addClass('warned');

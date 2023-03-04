@@ -3,7 +3,7 @@
 class Willow_smart_url_title_ext {
 
     var $settings        = array();
-    public $version         = '1.1.1';
+    public $version         = '1.1.2';
 
     function __construct($settings='')
     {
